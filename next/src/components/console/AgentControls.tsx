@@ -12,7 +12,6 @@ type AgentControlsProps = {
   handlePlay: () => void;
   handlePause: () => void;
   handleStop: () => void;
-};
 const AgentControls = ({
   lifecycle,
   disablePlay,
@@ -22,7 +21,6 @@ const AgentControls = ({
 }: AgentControlsProps) => {
   return (
     <div className="flex gap-2">
-      <Button ping={!disablePlay} disabled={disablePlay} onClick={handlePlay}>
         {lifecycle === "running" && <ImSpinner2 className="animate-spin" />}
         {lifecycle === "stopped" && <FaUndo />}
         {!["running", "stopped"].includes(lifecycle || "") && <FaPlay />}
