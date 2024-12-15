@@ -12,7 +12,6 @@ from openai.error import (
 
 from nisafi11_platform.schemas.agent import ModelSettings
 from nisafi11_platform.web.api.errors import OpenAIError
-
 T = TypeVar("T")
 
 
@@ -25,14 +24,12 @@ def parse_with_handling(parser: BaseOutputParser[T], completion: str) -> T:
         )
 
 
-    func: Callable[..., Any], *args: Any, settings: ModelSettings, **kwargs: Any
 ) -> Any:
     try:
         return await func(*args, **kwargs)
     except ServiceUnavailableError as e:
         raise OpenAIError(
             e,
-            "OpenAI is experiencing issues. Visit "
             "https://status.openai.com/ for more info.",
             should_log=not settings.custom_api_key,
         )
