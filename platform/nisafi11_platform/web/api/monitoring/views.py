@@ -14,7 +14,6 @@ def health_check() -> None:
 
 @router.get("/error")
 def error_check() -> None:
-    """
     Checks that errors are being correctly logged.
     """
     raise Exception("This is an expected error from the error check endpoint!")

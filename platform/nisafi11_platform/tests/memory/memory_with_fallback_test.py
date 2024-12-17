@@ -29,7 +29,6 @@ def test_memory_primary(mocker, method_name: str, args) -> None:
         ("get_similar_tasks", ("task1",)),
         ("reset_class", ()),
     ],
-)
 def test_memory_fallback(mocker, method_name: str, args) -> None:
     primary = mocker.Mock()
     secondary = mocker.Mock()
