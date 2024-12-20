@@ -3,13 +3,11 @@ import type { ReactNode } from "react";
 import React from "react";
 
 import Button from "../ui/button";
-
 type TextButtonProps = {
   children: ReactNode | string;
   icon?: ReactNode;
   onClick?: () => void;
   className?: string;
-};
 export default function TextButton({ children, onClick, icon, className }: TextButtonProps) {
   return (
     <Button
@@ -19,7 +17,6 @@ export default function TextButton({ children, onClick, icon, className }: TextB
         className,
       )}
     >
-      {icon}
       {children}
     </Button>
   );

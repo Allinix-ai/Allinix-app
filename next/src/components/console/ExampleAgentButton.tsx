@@ -1,6 +1,4 @@
-import React from "react";
 
-export const ExampleAgentButton = ({
   name,
   children,
   setAgentRun,
@@ -23,5 +21,4 @@ export const ExampleAgentButton = ({
       <p className="text-lg font-bold">{name}</p>
       <p className="mt-2 text-sm">{children}</p>
     </div>
-  );
 };
