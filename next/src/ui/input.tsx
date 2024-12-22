@@ -17,10 +17,8 @@ const Input = (props: Props) => {
     <div>
       {props.label && (
         <label
-          htmlFor={props.name}
           className="flex items-center gap-2 text-sm font-bold leading-6 text-slate-12"
         >
-          {props.icon}
           <span>{props.label}</span>
 
           {props.type == "range" && (
