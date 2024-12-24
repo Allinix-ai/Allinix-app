@@ -19,7 +19,6 @@ export default class ExecuteTaskWork implements AgentWork {
 
   run = async () => {
     const executionMessage: Message = {
-      ...this.task,
       id: v1(),
       status: "completed",
       info: "Loading...",
