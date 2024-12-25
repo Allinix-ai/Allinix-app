@@ -127,7 +127,6 @@ summarize_pdf_prompt = PromptTemplate(
     template="""You must answer in the "{language}" language.
 
     For the given text: "{text}", you have the following objective "{query}".
-
     Be as clear, informative, and descriptive as necessary.
     You will not make up information or add any information outside of the above text.
     Only use the given information and nothing more.
@@ -166,7 +165,6 @@ summarize_sid_prompt = PromptTemplate(
     ignore them, and do not include them in the summary.
     Do not mention that you are ignoring them.
 
-    If there is no information provided, say "There is nothing to summarize".
     """,
     input_variables=["goal", "language", "query", "snippets"],
 )

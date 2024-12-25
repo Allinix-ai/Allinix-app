@@ -9,8 +9,6 @@ interface LoaderProps {
   color?: string;
 }
 
-const Loader: FC<LoaderProps> = ({
-  className,
   size = 16,
   speed = 2,
   lineWeight = 7,
@@ -21,6 +19,5 @@ const Loader: FC<LoaderProps> = ({
       <Ring size={size} speed={speed} color={color} lineWeight={lineWeight} />
     </div>
   );
-};
 
 export default Loader;
