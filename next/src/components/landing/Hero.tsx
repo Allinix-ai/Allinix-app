@@ -75,7 +75,6 @@ const Hero: FC<{ className?: string }> = ({ className }) => {
         )}
       </div>
       <div className="relative z-10 col-span-1 max-w-full md:order-first">
-        <div className="relative flex flex-col items-center gap-4 md:items-start md:gap-12">
           <BannerBadge
             href="https://www.ycombinator.com/launches/J1r-allinix-ai-the-open-source-zapier-of-ai-agents"
             target="_blank"
@@ -98,7 +97,6 @@ const Hero: FC<{ className?: string }> = ({ className }) => {
             <p className="my-3 inline-block bg-gradient-to-r from-white via-white via-50% to-neutral-500 bg-clip-text text-center align-top font-inter font-[400] leading-[24px] tracking-[.08rem] text-transparent sm:w-4/5 md:text-left">
               Optimize web scraping with AI that generates and repairs scraping code, adapting to
               website changes. Scale your data extraction effortlessly.
-            </p>
           </div>
 
           <div className="relative hidden w-full items-center sm:max-w-[40em] md:flex">
@@ -149,7 +147,6 @@ const Hero: FC<{ className?: string }> = ({ className }) => {
               >
                 <>
                   <span className="py-2 font-medium">Join the Waitlist</span>
-                  <FaChevronRight
                     size="10"
                     className="text-gray-400 transition-transform group-hover:translate-x-1"
                   />
