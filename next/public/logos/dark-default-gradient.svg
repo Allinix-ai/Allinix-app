@@ -6,11 +6,9 @@
 <defs>
 <radialGradient id="paint0_radial_580_884" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.5 22.5) rotate(-4.76364) scale(6.0208)">
 <stop offset="0.0461539" stop-color="white" stop-opacity="0.7"/>
-<stop offset="1" stop-color="white" stop-opacity="0.1"/>
 </radialGradient>
 <radialGradient id="paint1_radial_580_884" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(7 11) rotate(5.19443) scale(16.568)">
 <stop offset="0.139192" stop-color="white" stop-opacity="0.7"/>
 <stop offset="1" stop-color="white" stop-opacity="0.1"/>
 </radialGradient>
-</defs>
 </svg>
