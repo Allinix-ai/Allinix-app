@@ -1,7 +1,6 @@
 import type { COBEOptions } from "cobe";
 import createGlobe from "cobe";
 import type { MutableRefObject } from "react";
-import React, { useEffect, useRef } from "react";
 
 export default function Globe(): JSX.Element {
   const canvasRef: MutableRefObject<HTMLCanvasElement | null> = useRef(null);
