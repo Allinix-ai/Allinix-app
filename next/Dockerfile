@@ -17,7 +17,6 @@ COPY package*.json ./
 # Install dependencies
 
 # Copy the wait-for-db.sh script
-COPY wait-for-db.sh /usr/local/bin/wait-for-db.sh
 RUN chmod +x /usr/local/bin/wait-for-db.sh
 # Copy the rest of the application code
 COPY . .
