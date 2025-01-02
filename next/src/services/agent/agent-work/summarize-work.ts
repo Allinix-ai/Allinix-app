@@ -1,4 +1,3 @@
-import { v1 } from "uuid";
 
 import type AgentWork from "./agent-work";
 import type { Message } from "../../../types/message";
