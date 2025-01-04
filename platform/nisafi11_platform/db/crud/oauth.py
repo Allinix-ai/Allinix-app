@@ -1,4 +1,3 @@
-import secrets
 from typing import Dict, Optional
 
 from fastapi import Depends
