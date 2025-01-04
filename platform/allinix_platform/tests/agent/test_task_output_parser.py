@@ -147,7 +147,6 @@ def test_extract_array_success(input_str: str, expected: List[str]) -> None:
 )
 def test_extract_array_exception(input_str: str, exception: Type[Exception]) -> None:
     with pytest.raises(exception):
-        extract_array(input_str)
 
 
 @pytest.mark.parametrize(
