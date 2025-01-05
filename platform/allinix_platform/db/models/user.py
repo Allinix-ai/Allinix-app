@@ -5,7 +5,6 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from allinix_platform.db.base import Base
 
-
 class UserSession(Base):
     __tablename__ = "Session"
 
@@ -25,14 +24,12 @@ class User(Base):
 
     name = mapped_column(String, nullable=True)
     email = mapped_column(String, nullable=True, unique=True)
-    email_verified = mapped_column(DateTime, nullable=True, name="emailVerified")
     image = mapped_column(String, nullable=True)
     create_date = mapped_column(
         DateTime, server_default=text("(now())"), name="createDate"
     )
 
     sessions: Mapped[List["UserSession"]] = relationship(
-        "UserSession", back_populates="user"
     )
 
     __table_args__ = (Index("email"),)

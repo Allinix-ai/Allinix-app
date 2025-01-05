@@ -1,11 +1,9 @@
 {
-  "ADDING_TASK": "Añadiendo tarea",
   "ALLINIX_DOCUMENTATION": "Documentación de Allinix",
   "CLOSE": "Cerrar",
   "CONTINUE": "Continuar",
   "COPIED_TO_CLIPBOARD": "¡Copiado al portapapeles! 🚀",
   "COPY": "Copiar",
-  "CREATE_AN_AGENT_DESCRIPTION": "¡Crea un agente agregando un nombre, objetivo y presionando 'Ejecutar Agente'!",
   "CURRENT_TASKS": "Tareas Actuales",
   "EXECUTING": "Ejecutando",
   "EXPORT": "Exportar",
@@ -23,4 +21,3 @@
   "researchgpt": "InvestigaGPT 📜",
   "travelgpt": "ViajaGPT 🌴",
   "web-search": "búsqueda Web"
-}
