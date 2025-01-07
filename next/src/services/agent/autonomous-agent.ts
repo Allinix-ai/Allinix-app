@@ -88,7 +88,6 @@ class AutonomousAgent {
     const RETRY_TIMEOUT = 2000;
 
     await withRetries(
-      async () => {
         if (shouldStop()) return;
         await work.run();
       },
@@ -96,7 +95,6 @@ class AutonomousAgent {
         const shouldRetry = work.onError?.(e) || true;
 
         if (!isRetryableError(e)) {
-          this.stopAgent();
           return false;
         }
 
@@ -141,7 +139,6 @@ class AutonomousAgent {
 
   async chat(message: string) {
     if (this.model.getLifecycle() == "running") this.pauseAgent();
-    let paused = false;
     if (this.model.getLifecycle() == "stopped") {
       paused = true;
       this.model.setLifecycle("pausing");

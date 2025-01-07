@@ -58,7 +58,6 @@ export const options = (
                 name: creds.name,
                 email: creds.name,
                 image: undefined,
-                emailVerified: null,
                 superAdmin: false,
               } as AdapterUser);
         },
@@ -72,7 +71,6 @@ export const options = (
       redirect: (params: { url: string; baseUrl: string }) =>
         params.url.startsWith(params.baseUrl) ? params.url : params.baseUrl,
 
-      async signIn({ user }) {
         if (user) {
           const session = await adapter.createSession({
             sessionToken: v4(),
@@ -94,7 +92,6 @@ export const options = (
     jwt: {
       encode: () => {
         const cookie = getCookie("next-auth.session-token", {
-          req: req,
           res: res,
         });
 

@@ -18,7 +18,6 @@ export const toApiModelSettings = (modelSettings: ModelSettings, session?: Sessi
     model: allowCustomization ? modelSettings.customModelName : "gpt-3.5-turbo",
     temperature: modelSettings.customTemperature,
     max_tokens: allowCustomization ? modelSettings.maxTokens : 500,
-    custom_api_key: modelSettings.customApiKey,
   };
 };
 
