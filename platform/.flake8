@@ -1,7 +1,6 @@
 [flake8]
 max-complexity = 6
 inline-quotes = double
-max-line-length = 88
 extend-ignore = E203
 docstring_style=sphinx
 
@@ -56,7 +55,6 @@ ignore =
   WPS229,
   ; Found unpythonic getter or setter
   WPS615,
-  ; Found a line that starts with a dot
   WPS348,
   ; Found complex default value (for dependency injection)
   WPS404,
