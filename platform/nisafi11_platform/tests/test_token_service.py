@@ -3,7 +3,6 @@ from unittest.mock import Mock
 import tiktoken
 
 from nisafi11_platform.schemas.agent import LLM_MODEL_MAX_TOKENS
-from nisafi11_platform.services.tokenizer.token_service import TokenService
 
 encoding = tiktoken.get_encoding("cl100k_base")
 
@@ -68,8 +67,6 @@ def test_calculate_max_tokens_with_negative_result() -> None:
 
 
 LONG_TEXT = """
-This is some long text. This is some long text. This is some long text.
-This is some long text. This is some long text. This is some long text.
 This is some long text. This is some long text. This is some long text.
 This is some long text. This is some long text. This is some long text.
 This is some long text. This is some long text. This is some long text.
