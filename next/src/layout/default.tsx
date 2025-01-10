@@ -8,7 +8,6 @@ interface LayoutProps {
   centered?: boolean;
 }
 
-const DefaultLayout = (props: LayoutProps) => {
   const description = "Assemble, configure, and deploy autonomous AI Agents in your browser.";
 
   return (
@@ -24,7 +23,6 @@ const DefaultLayout = (props: LayoutProps) => {
         <meta name="twitter:site" content="@Allinix" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Allinix 🤖" />
-        <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content="https://allinix.allinix.ai/banner.png" />
         <meta name="twitter:image:width" content="1280" />
         <meta name="twitter:image:height" content="640" />

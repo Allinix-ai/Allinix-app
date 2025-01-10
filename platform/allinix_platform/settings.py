@@ -134,7 +134,6 @@ class Settings(BaseSettings):
         return all(
             [
                 self.pusher_app_id,
-                self.pusher_key,
                 self.pusher_secret,
                 self.pusher_cluster,
             ]
@@ -170,7 +169,6 @@ class Settings(BaseSettings):
         )
 
     class Config:
-        env_file = ".env"
         env_prefix = ENV_PREFIX
         env_file_encoding = "utf-8"
 
