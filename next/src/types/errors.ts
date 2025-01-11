@@ -18,7 +18,6 @@ export const isRetryableError = (e: unknown): boolean => {
   if (axios.isAxiosError(e)) {
     if (isPlatformError(e.response?.data)) {
       const error = e.response?.data.error;
-      return error !== MAX_LOOPS_ERROR;
     }
 
     return e.response?.status !== 429;
