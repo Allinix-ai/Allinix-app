@@ -10,7 +10,6 @@ interface LinkInfo {
   link: string;
   index: number;
 }
-
 const MetaDataSchema = z.object({
   title: z.string().nullish(),
   favicon: z.string().nullish(),
@@ -42,7 +41,6 @@ const SourceLink = ({ link, index }: LinkInfo) => {
             <div className="animate-pulse space-y-2">
               <div className="h-2 rounded bg-slate-8"></div>
               <div className="h-2 rounded bg-slate-8"></div>
-              <div className="flex items-center gap-2">
                 <div className="h-4 w-4 rounded bg-slate-8"></div>
                 <div className="h-2 w-2/3 rounded bg-slate-8"></div>
               </div>
@@ -72,7 +70,6 @@ const SourceLink = ({ link, index }: LinkInfo) => {
         </div>
       </a>
     </FadeIn>
-  );
 };
 
 export default SourceLink;

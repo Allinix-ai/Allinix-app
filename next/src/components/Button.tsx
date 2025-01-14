@@ -20,7 +20,6 @@ const Button = forwardRef((props: ButtonProps, ref: ForwardedRef<HTMLButtonEleme
   const [loading, setLoading] = useState(false);
   const onClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (props.loader == true) setLoading(true);
-
     try {
       void Promise.resolve(props.onClick?.(e)).then();
     } catch (e) {
@@ -30,7 +29,6 @@ const Button = forwardRef((props: ButtonProps, ref: ForwardedRef<HTMLButtonEleme
 
   return (
     <button
-      ref={ref}
       type={props.type}
       disabled={loading || props.disabled}
       className={clsx(
@@ -38,7 +36,6 @@ const Button = forwardRef((props: ButtonProps, ref: ForwardedRef<HTMLButtonEleme
         props.disabled && "cursor-not-allowed border-white/10 bg-slate-9 text-white",
         props.disabled ||
           "cursor-pointer bg-[#1E88E5]/80 text-white hover:bg-[#0084f7] hover:shadow-lg",
-        props.disabled || props.enabledClassName,
         props.className,
       )}
       onClick={onClick}
