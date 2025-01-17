@@ -16,6 +16,5 @@ const Ping = ({ color }: { color: "blue" | "white" }) => {
       ></span>
     </span>
   );
-};
 
 export default Ping;

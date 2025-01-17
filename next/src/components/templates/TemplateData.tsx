@@ -105,7 +105,6 @@ export const TEMPLATE_DATA: TemplateModel[] = [
     placeholder: "Marketing",
   },
   {
-    name: "NovelGPT",
     icon: <FaBookOpen />,
     category: "Creative and Social",
     description: "Begin writing a novel in a selected genre",
