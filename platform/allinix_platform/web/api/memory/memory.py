@@ -24,7 +24,6 @@ class AgentMemory(ABC):
 
     @abstractmethod
     def get_similar_tasks(self, query: str, score_threshold: float = 0.95) -> List[str]:
-        raise NotImplementedError()
 
     @abstractmethod
     def reset_class(self) -> None:
