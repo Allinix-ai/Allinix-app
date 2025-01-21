@@ -29,7 +29,6 @@ describe("sendErrorMessage", () => {
       isAxiosError: true,
       response: {
         status: 409,
-        data: {
           error: "OpenAIError",
           detail: "You have exceeded the maximum number of requests allowed for your API key.",
           code: 429,
@@ -46,7 +45,6 @@ describe("sendErrorMessage", () => {
 
   it("should handle unknown platform errors", () => {
     const axiosError = {
-      isAxiosError: true,
       response: { status: 409 },
     };
 
