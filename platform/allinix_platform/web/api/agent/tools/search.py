@@ -34,7 +34,6 @@ async def _google_serper_search_results(
         async with session.post(
             f"https://google.serper.dev/{search_type}", headers=headers, params=params
         ) as response:
-            response.raise_for_status()
             search_results = await response.json()
             return search_results
 
@@ -83,7 +82,6 @@ class Search(Tool):
             elif answer_box.get("snippetHighlighted"):
                 answer_values.append(", ".join(answer_box.get("snippetHighlighted")))
 
-            if len(answer_values) > 0:
                 snippets.append(
                     CitedSnippet(
                         len(snippets) + 1,
@@ -104,6 +102,5 @@ class Search(Tool):
             snippets.append(CitedSnippet(len(snippets) + 1, "\n".join(texts), link))
 
         if len(snippets) == 0:
-            return stream_string("No good Google Search Result was found", True)
 
         return summarize_with_sources(self.model, self.language, goal, task, snippets)
