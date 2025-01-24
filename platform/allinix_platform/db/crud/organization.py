@@ -81,7 +81,6 @@ class OrganizationCrud(BaseCrud):
         return OrganizationUsers(
             id=org.id,
             name=org.name,
-            users=[
                 OrgUser(
                     id=org_user.user_id,
                     role=org_user.role,

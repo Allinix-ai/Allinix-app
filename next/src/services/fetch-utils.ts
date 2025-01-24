@@ -60,7 +60,6 @@ export const put = async <T extends z.ZodTypeAny>(
   const response = await fetch(`${env.NEXT_PUBLIC_BACKEND_URL}${path}`, {
     body: JSON.stringify(body),
     method: "PUT",
-    headers: getHeaders(accessToken, organizationId),
   });
 
   if (!response.ok) {
