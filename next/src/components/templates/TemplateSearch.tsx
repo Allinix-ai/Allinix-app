@@ -31,7 +31,6 @@ const SearchBar: FC<SearchBarProps> = ({ setSearchQuery, setCategory }) => {
         <select
           id="category"
           name="category"
-          className="block w-full rounded-md border border-white/20 bg-zinc-900 px-2 py-1 text-white shadow-sm focus:border-white focus:outline-none focus:ring-white sm:text-sm"
           onChange={handleCategoryChange}
         >
           <option value="">All</option>

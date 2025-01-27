@@ -2,9 +2,7 @@ from typing import Any
 
 from lanarky.responses import StreamingResponse
 from langchain import WikipediaAPIWrapper
-
 from allinix_platform.web.api.agent.stream_mock import stream_string
-from allinix_platform.web.api.agent.tools.tool import Tool
 
 
 class Wikipedia(Tool):
@@ -23,7 +21,6 @@ class Wikipedia(Tool):
         wikipedia_client = WikipediaAPIWrapper(
             wiki_client=None,  # Meta private value but mypy will complain its missing
         )
-
         # TODO: Make the below async
         wikipedia_search = wikipedia_client.run(input_str)
         # return summarize_with_sources(self.model, self.language, goal, task, [wikipedia_search])
