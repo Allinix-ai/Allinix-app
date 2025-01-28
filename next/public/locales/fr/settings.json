@@ -8,7 +8,6 @@
   "HERE": "ici",
   "HERE_YOU_CAN_ADD_YOUR_OPENAI_API_KEY": "Ici, vous pouvez ajouter votre clé API OpenAI. Cela signifie que vous devrez payer pour utiliser votre propre jeton OpenAI, mais vous aurez un accès accru à ChatGPT ! Vous pouvez également sélectionner n'importe quel modèle proposé par OpenAI.",
   "HIGHER_VALUES_MAKE_OUTPUT_MORE_RANDOM": "Des valeurs plus élevées rendent la sortie plus aléatoire, tandis que des valeurs plus basses la rendent plus ciblée et précise.",
-  "INFO_TO_USE_GPT4": "Pour utiliser le modèle GPT-4, vous devez également fournir une clé API. Vous pouvez l'obtenir",
   "INVALID_OPENAI_API_KEY": "Clé API invalide !",
   "LABEL_MODE": "Mode",
   "LABEL_MODEL": "Modèle",
