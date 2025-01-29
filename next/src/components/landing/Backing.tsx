@@ -37,8 +37,6 @@ const Backing = (props: { className?: string }) => (
       >
         Panache Ventures
       </a>
-    </div>
   </div>
 );
 
-export default Backing;
