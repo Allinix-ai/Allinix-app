@@ -11,7 +11,6 @@ import Dialog from "../../ui/dialog";
 import { get_avatar } from "../../utils/user";
 
 const AuthItem: FC<{
-  session: Session | null;
   classname?: string;
   signIn: () => Promise<void>;
   signOut: () => Promise<void>;
@@ -67,7 +66,6 @@ const AuthItem: FC<{
           icon={<img className="h-20 w-20 rounded-md" src={get_avatar(user)} alt="" />}
           actions={
             <>
-              <button
                 type="button"
                 className="inline-flex w-full justify-center rounded-md bg-sky-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sky-400"
                 onClick={() => {
@@ -95,7 +93,6 @@ const AuthItem: FC<{
           </div>
         </Dialog>
       </div>
-    </div>
   );
 };
 
