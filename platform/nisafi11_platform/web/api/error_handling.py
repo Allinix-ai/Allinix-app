@@ -1,4 +1,3 @@
-from fastapi import Request
 from fastapi.responses import JSONResponse
 from loguru import logger
 
@@ -13,7 +12,6 @@ async def platformatic_exception_handler(
         logger.exception(platform_exception)
 
     return JSONResponse(
-        status_code=409,
         content={
             "error": platform_exception.__class__.__name__,
             "detail": platform_exception.detail,
