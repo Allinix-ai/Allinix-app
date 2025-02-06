@@ -8,7 +8,6 @@ from allinix_platform.web.api.agent.analysis import Analysis
 class AgentService(Protocol):
     async def start_goal_agent(self, *, goal: str) -> List[str]:
         pass
-
     async def analyze_task_agent(
         self, *, goal: str, task: str, tool_names: List[str]
     ) -> Analysis:

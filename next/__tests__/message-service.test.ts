@@ -21,7 +21,6 @@ describe("sendErrorMessage", () => {
     expect(renderMessage).toHaveBeenCalledWith({
       type: "error",
       value: "ERROR_API_KEY_QUOTA",
-    });
   });
 
   it("should handle platform errors", () => {
@@ -72,4 +71,3 @@ describe("sendErrorMessage", () => {
       value: "An unknown error occurred. Please try again later.",
     });
   });
-});
