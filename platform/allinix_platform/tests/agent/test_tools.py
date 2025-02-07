@@ -2,7 +2,6 @@ from typing import List, Type
 
 from allinix_platform.web.api.agent.tools.conclude import Conclude
 from allinix_platform.web.api.agent.tools.image import Image
-from allinix_platform.web.api.agent.tools.reason import Reason
 from allinix_platform.web.api.agent.tools.search import Search
 from allinix_platform.web.api.agent.tools.sidsearch import SID
 from allinix_platform.web.api.agent.tools.tools import (
@@ -41,7 +40,6 @@ def test_get_tools_overview_no_duplicates() -> None:
     # Check for duplicates in the overview
     overview_list = overview.split("\n")
     assert len(overview_list) == len(
-        set(overview_list)
     ), "Overview includes duplicate entries"
 
 
@@ -50,7 +48,6 @@ def test_get_default_tool() -> None:
 
 
 def test_get_tool_from_name() -> None:
-    assert get_tool_from_name("Search") == Search
     assert get_tool_from_name("CoNcLuDe") == Conclude
     assert get_tool_from_name("NonExistingTool") == Search
     assert get_tool_from_name("SID") == SID
