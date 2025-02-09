@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
