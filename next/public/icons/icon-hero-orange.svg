@@ -28,7 +28,6 @@
             <stop stop-color="white"/>
             <stop offset="0.5" stop-color="white"/>
         </linearGradient>
-        <linearGradient id="paint2_linear_726_980" x1="104.937" y1="0.45752" x2="104.937" y2="199.587"
                         gradientUnits="userSpaceOnUse">
             <stop stop-color="white" stop-opacity="0.4"/>
             <stop offset="1" stop-color="white" stop-opacity="0.15"/>
