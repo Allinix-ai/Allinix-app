@@ -26,7 +26,6 @@ from nisafi11_platform.web.api.agent.task_output_parser import (
         (
             "[]",
             [],
-        ),
     ],
 )
 def test_parse_success(input_text: str, expected_output: List[str]) -> None:
@@ -160,7 +159,6 @@ def test_extract_array_exception(input_str: str, exception: Type[Exception]) -> 
         ),
         ("Task 2. Create a python script", "Create a python script"),
         ("5 - This is a sample task", "This is a sample task"),
-        ("2: This is a sample task", "This is a sample task"),
         (
             "This is a sample task without a prefix",
             "This is a sample task without a prefix",

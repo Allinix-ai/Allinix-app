@@ -38,7 +38,6 @@ class OAuthCrud(BaseCrud):
     async def get_installation_by_user_id(
         self, user_id: str, provider: str
     ) -> Optional[OauthCredentials]:
-        query = select(OauthCredentials).filter(
             OauthCredentials.user_id == user_id,
             OauthCredentials.provider == provider,
             OauthCredentials.access_token_enc.isnot(None),
